@@ -73,7 +73,8 @@ app.get("/users/:userId/lists/:listId", async (req, res, next) => {
     const userId = req.params.userId;
     const listId = req.params.listId;
     const user = await User.findByPk(userId, {
-      include: [TodoList],
+      include: { model: TodoList },
+      where: { id: listId },
     });
     res.send(user);
   } catch (e) {
