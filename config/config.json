@@ -1,0 +1,18 @@
+{
+  "development": {
+    "url": "postgres://gfeggmct:ZXzgJJLrqOyaZTspLlP-mcz2RHPTXkx3@kandula.db.elephantsql.com:5432/gfeggmct",
+    "dialect": "postgres",
+    "operatorsAliases": "0"
+  },
+  "test": {
+    "username": "root",
+    "password": null,
+    "database": "database_test",
+    "host": "127.0.0.1",
+    "dialect": "mysql",
+    "operatorsAliases": false
+  },
+  "production": {
+    "use_env_variable": "DATABASE_URL"
+  }
+}
